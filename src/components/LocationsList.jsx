@@ -4,7 +4,7 @@ import Location from './Location'
 
 function LocationList() {
     const { locations } = useLocations()
-    console.log(useLocations());
+    console.log(locations);
     return (
         <div>
             {locations.map(location => <Collapse
@@ -13,9 +13,10 @@ function LocationList() {
                 title={location.name}
                 content={<Location
                     key={location.id}
-                    
+
                     ids={location.residents.map((resident) => {
                         const id = resident.split("/").pop();
+                        
                         return id;
                     })} />} />)}
         </div>
