@@ -8,7 +8,6 @@ export const useCharacters = (ids) => {
   useEffect(() => {
     setIsLoading(true);
     fetchCharacters(ids).then((data) => {
-      console.log(data);
       setCharacters(data);
       setIsLoading(false);
     });

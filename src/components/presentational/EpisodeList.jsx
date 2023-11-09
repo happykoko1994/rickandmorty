@@ -1,4 +1,3 @@
-import { EpisodeItem } from "./EpisodeItem";
 import { Collapse } from "./Collapse";
 import { CharacterList } from "./CharacterList";
 import { useEpisodes } from "../hooks/useEpisodes";

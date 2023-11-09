@@ -60,3 +60,9 @@ body {
   padding: 10px;
   overflow: hidden;
 }
+
+.title{
+  color: #dde6ed;
+  padding: 10px;
+  cursor: pointer;
+}
